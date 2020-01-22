@@ -1,12 +1,9 @@
 class QuestionsController < ApplicationController
-
   def ask
-    raise
   end
 
   def answer
     @question = params[:question]
-
     if @question == "I am going to work"
       @answer = "Great!"
     elsif @question.include?("?")
